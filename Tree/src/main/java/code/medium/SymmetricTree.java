@@ -1,5 +1,7 @@
 package code.medium;
 
+import code.TreeNode;
+
 public class SymmetricTree {
     public boolean isSymmetric(TreeNode root) {
         if (root == null) return true;
