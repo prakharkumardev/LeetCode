@@ -6,7 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Array" />
         <module name="Tree" />
+        <module name="Java" />
+        <module name="String" />
       </profile>
     </annotationProcessing>
   </component>
