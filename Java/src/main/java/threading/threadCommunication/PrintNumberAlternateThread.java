@@ -1,9 +1,8 @@
-package threading;
+package threading.threadCommunication;
 
-import java.time.Duration;
 import java.time.Instant;
 
-public class printNumberAlternateThread {
+public class PrintNumberAlternateThread {
 
     private boolean isOdd = true;
 
@@ -66,8 +65,16 @@ public class printNumberAlternateThread {
 
 
     public void main() {
-        Thread t1 = new Thread(new printOddThread());
-        Thread t2 = new Thread(new printEvenThread());
+        Thread t1 = new Thread(()->{
+            for (int i = 1; i <= 10; i += 2) {
+                printOdd(i);
+            }
+        });
+        Thread t2 = new Thread(()->{
+            for (int i = 2; i <= 10; i += 2) {
+                printEven(i);
+            }
+        });
         t1.start();
         t2.start();
 
