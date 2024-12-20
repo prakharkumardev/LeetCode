@@ -174,6 +174,14 @@ class ConcreteUnderInputFactory implements UnderInputFactory {
     }
 }
 
+/*
+This scenario involves creating an Abstract Factory (UnderInputFactory) that produces
+different factories for each UI component (ButtonFactory, SwitchFactory, CheckboxFactory,
+InputBoxFactory). Each specific factory is responsible for creating the appropriate type
+of its component (e.g., BlackButton, WhiteButton, etc.).
+
+ */
+
 public class Main {
     public static void main(String[] args) {
         // Create an instance of the UnderInputFactory
