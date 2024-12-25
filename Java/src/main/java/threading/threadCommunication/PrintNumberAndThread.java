@@ -18,7 +18,7 @@ public class PrintNumberAndThread {
 
     public void printNumbers(int threadNumber) throws InterruptedException {
         synchronized (this) {
-            while (count <= maxCount - noOfThreads + 1) { // Fixed condition
+            while (count <= maxCount) { // Fixed condition
                 if (count > maxCount) { // Ensure threads exit properly
                     notifyAll(); // Notify remaining threads before exiting
                     break;
@@ -30,7 +30,10 @@ public class PrintNumberAndThread {
                         Thread.currentThread().interrupt();
                     }
                 }
-                System.out.println(count + ": " + Thread.currentThread().getName());
+                if(count <= maxCount){
+                    System.out.println(count + ": " + Thread.currentThread().getName());
+
+                }
                 count++;
                 notifyAll();// Notify all threads to proceed
                 Thread.sleep(100); // Sleep for 1 second

@@ -3,11 +3,21 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/DSA/Array/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DSA/Array/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DSA/Linkedlist/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DSA/Linkedlist/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DSA/String/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DSA/String/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DSA/Tree/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DSA/Tree/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DSA/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DSA/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Interview/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Interview/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Java/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Java/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/LowLevelDesign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/LowLevelDesign/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Microservices/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Microservices/src/main/resources" charset="UTF-8" />
   </component>
 </project>

@@ -9,7 +9,7 @@ to notify all registered observers (subscribers) automatically when the subject 
  */
 
 // Client Code
-public class Main {
+public class  Main {
     public static void main(String[] args) {
         // Create the subject
         WeatherData weatherData = new WeatherData();

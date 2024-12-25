@@ -8,9 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Array" />
-        <module name="Tree" />
         <module name="Java" />
+        <module name="LowLevelDesign" />
+        <module name="Tree" />
         <module name="String" />
+        <module name="Microservices" />
+        <module name="Linkedlist" />
+        <module name="Interview" />
       </profile>
     </annotationProcessing>
   </component>

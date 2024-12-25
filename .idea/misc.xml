@@ -9,6 +9,12 @@
         <option value="$PROJECT_DIR$/String/pom.xml" />
         <option value="$PROJECT_DIR$/Array/pom.xml" />
         <option value="$PROJECT_DIR$/Microservices/pom.xml" />
+        <option value="$PROJECT_DIR$/DSA/Array/pom.xml" />
+        <option value="$PROJECT_DIR$/DSA/String/pom.xml" />
+        <option value="$PROJECT_DIR$/DSA/Tree/pom.xml" />
+        <option value="$PROJECT_DIR$/DSA/pom.xml" />
+        <option value="$PROJECT_DIR$/LowLevelDesign/pom.xml" />
+        <option value="$PROJECT_DIR$/Interview/pom.xml" />
       </list>
     </option>
   </component>
