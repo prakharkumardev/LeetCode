@@ -5,7 +5,13 @@ public class Yield extends Thread {
         public void run() {
             for (int i = 0; i < 5; i++) {
                 System.out.println(Thread.currentThread().getName() + " is running...");
-                Thread.yield();
+                try {
+                    Thread.yield();
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+
             }
         }
 

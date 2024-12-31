@@ -12,6 +12,7 @@
         <module name="LowLevelDesign" />
         <module name="Tree" />
         <module name="String" />
+        <module name="DP" />
         <module name="Microservices" />
         <module name="Linkedlist" />
         <module name="Interview" />

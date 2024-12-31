@@ -1,11 +1,18 @@
 package vendingMachine.adapter;
 
+import vendingMachine.eventType.EventType;
 import vendingMachine.models.Amount;
 import vendingMachine.models.Payment;
 import vendingMachine.models.enums.PaymentStatus;
 import vendingMachine.models.enums.PaymentType;
+import vendingMachine.observer.Observer;
+import vendingMachine.observer.Subject;
 
-public class CashPaymentAdapter implements PaymentProcessor {
+import java.util.HashSet;
+import java.util.Set;
+
+public class CashPaymentAdapter implements PaymentProcessor, Subject<Payment> {
+    private final Set<Observer<Payment>> observers = new HashSet<>();
 
     @Override
     public Payment processPayment(Amount amount) {
@@ -24,4 +31,20 @@ public class CashPaymentAdapter implements PaymentProcessor {
         return payment;
     }
 
+    @Override
+    public void subscribe(Observer<Payment> observer) {
+        observers.add(observer);
+    }
+
+    @Override
+    public void unsubscribe(Observer<Payment> observer) {
+        observers.remove(observer);
+    }
+
+    @Override
+    public void notifyObservers(EventType eventType, Payment message) {
+        observers.forEach((observer) -> {
+            observer.update(EventType.PAYMENT, message);
+        });
+    }
 }

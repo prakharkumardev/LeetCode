@@ -13,7 +13,7 @@ public class FairnessLockExample {
         lock.lock();
         try {
             System.out.println(Thread.currentThread().getName() + " acquired the lock.");
-            Thread.sleep(500);
+            Thread.sleep(5);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         } finally {
@@ -31,7 +31,7 @@ public class FairnessLockExample {
                 example.accessResource();
             }
         };
-        for(int i = 0 ;i< 20;i++){
+        for(int i = 0 ;i< 1000;i++){
             Thread thread = new Thread(task, "Thread " + i);
             thread.start();
         }

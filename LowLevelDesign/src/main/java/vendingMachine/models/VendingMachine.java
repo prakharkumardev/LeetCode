@@ -2,6 +2,10 @@ package vendingMachine.models;
 
 import lombok.*;
 import vendingMachine.models.enums.PaymentStatus;
+import vendingMachine.observer.Observer;
+
+import java.util.HashSet;
+import java.util.Set;
 
 
 @AllArgsConstructor
@@ -14,6 +18,8 @@ public class VendingMachine extends BaseModel implements Machine {
     private String name;
     private Amount unusedAmount;
     private final int THRESHOLD;
+    private final Set<Observer<String>> observers = new HashSet<>();
+
     public static class vendingMachineBuilder{
         private final Inventory innverntory = new Inventory();
         private Amount totalAmount = new Amount(0);
@@ -40,6 +46,11 @@ public class VendingMachine extends BaseModel implements Machine {
 
     private ProductQuantity getProductQuantity(long productId) {
         return innverntory.getProductId(productId) == null ? null : innverntory.getProductId(productId);
+    }
+
+    @Override
+    public void subscribe(Observer<String> observer) {
+        observers.add(observer);
     }
 
     @Override

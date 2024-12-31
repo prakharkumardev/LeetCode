@@ -1,7 +1,7 @@
 package vendingMachine.eventType;
 
 public enum EventType {
-    INNVENTTORY_LOW,
+    INVENTORY_LOW,
     MONEY_BOX_FULL,
-
+    PAYMENT
 }
