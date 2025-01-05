@@ -11,6 +11,8 @@
     <modules>
         <module>Linkedlist</module>
         <module>DP</module>
+        <module>Hashmap</module>
+        <module>Greedy</module>
     </modules>
 
     <properties>

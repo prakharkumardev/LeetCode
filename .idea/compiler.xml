@@ -9,10 +9,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Array" />
         <module name="Java" />
+        <module name="Hashmap" />
         <module name="LowLevelDesign" />
         <module name="Tree" />
         <module name="String" />
         <module name="DP" />
+        <module name="Greedy" />
         <module name="Microservices" />
         <module name="Linkedlist" />
         <module name="Interview" />
