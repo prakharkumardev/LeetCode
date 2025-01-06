@@ -22,7 +22,7 @@ public class MergerList {
         // Print the merged and sorted list
         System.out.println("Merged and Sorted List: " + mergedList);
 
-        
+
         // Merging and sorting in a single stream operation
         mergedList = Stream.concat(list1.stream(), list2.stream())
                 .sorted()
@@ -31,5 +31,5 @@ public class MergerList {
         // Print the merged and sorted list
         System.out.println("Merged and Sorted List: " + mergedList);
     }
-    }
+
 }

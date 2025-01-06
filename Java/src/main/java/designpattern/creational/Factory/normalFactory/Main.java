@@ -7,7 +7,8 @@ import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
-        Database database = DatabaseFactory.getDatabase("mysql");
+        //here we need sql database, without knowing weather mysql is being used or postgrece is being used
+        Database database = DatabaseFactory.getDatabase("sql");
         database.connect();
         database.disconnect();
 

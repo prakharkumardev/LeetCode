@@ -2,9 +2,11 @@ package designpattern.creational.builder;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
+@ToString
 public class Person {
     private String name;
     private String address;
@@ -34,10 +36,7 @@ public class Person {
         }
     }
 
-    @Override
-    public String toString() {
-        return this.name + " " + this.address + " " + this.age + " " + this.gender + " " + this.birthday;
-    }
+
 
 }
 

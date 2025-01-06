@@ -37,12 +37,12 @@ public class Product implements Prototype, Cloneable {
 class main{
     public static void main(String[] args) throws CloneNotSupportedException {
         Product product = new Product(1, "Laptop", 1000);
-        System.out.println(product);
+        //System.out.println(product);
         Product productDeepClone = (Product) product.getClone();
         Product productShallowClone = (Product) product.clone();
         productDeepClone.setId(2);
-        productShallowClone.setId(3);
-
+        //productShallowClone.setId(3);
+        System.out.println(product.equals(productShallowClone));
         System.out.println(product);
         System.out.println(productDeepClone);
         System.out.println(productShallowClone);
