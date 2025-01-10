@@ -10,7 +10,7 @@ public final class ImmutableClass {
 
     public ImmutableClass(int value, List<Integer> list) {
         this.value = value;
-        this.list = list;
+        this.list = new ArrayList<>(list);  //make sure to create a new list, as the list passed in could be modified
     }
     //immutable method
     public int getValue() {
