@@ -19,16 +19,16 @@ public class Main {
             System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
 
-        // Example using natural ordering by implementing Comparable
-        TreeMap<Student, String> naturalOrderMap = new TreeMap<>();
-        naturalOrderMap.put(new Student(1, "Alice"), "Grade A");
-        naturalOrderMap.put(new Student(3, "Charlie"), "Grade B");
-        naturalOrderMap.put(new Student(2, "Bob"), "Grade A");
-        naturalOrderMap.put(new Student(2, "David"), "Grade C");
-
-        System.out.println("\nTreeMap using Natural Ordering:");
-        for (var entry : naturalOrderMap.entrySet()) {
-            System.out.println(entry.getKey() + " -> " + entry.getValue());
-        }
+//        // Example using natural ordering by implementing Comparable
+//        TreeMap<Student, String> naturalOrderMap = new TreeMap<>();
+//        naturalOrderMap.put(new Student(1, "Alice"), "Grade A");
+//        naturalOrderMap.put(new Student(3, "Charlie"), "Grade B");
+//        naturalOrderMap.put(new Student(2, "Bob"), "Grade A");
+//        naturalOrderMap.put(new Student(2, "David"), "Grade C");
+//
+//        System.out.println("\nTreeMap using Natural Ordering:");
+//        for (var entry : naturalOrderMap.entrySet()) {
+//            System.out.println(entry.getKey() + " -> " + entry.getValue());
+//        }
     }
 }

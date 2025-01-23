@@ -27,6 +27,10 @@ public class Logger {
         return loggerInstance;
     }
 
+    public static Logger getInstance() {
+        return null;
+    }
+
     public void info(String message){
         createLog(LoggerLevel.INFO, message);
     }

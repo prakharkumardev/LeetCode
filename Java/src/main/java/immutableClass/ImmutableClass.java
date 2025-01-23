@@ -27,3 +27,4 @@ public final class ImmutableClass {
         return new ImmutableClass(value, newList);
     }
 }
+

@@ -6,7 +6,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class BankAccount {
-    private int balance  = 100;
+    private int balance  = 90;
     private final Lock lock = new ReentrantLock();
 
     public void withdraw(int amount) {
