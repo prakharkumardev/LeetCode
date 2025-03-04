@@ -28,11 +28,11 @@ public class completableFutureExample {
         CompletableFuture<String> cf1 = new CompletableFuture<>();
         cf1 = CompletableFuture.supplyAsync(()->{
             return "Completable task completed";
+        })
+                .thenApply(res ->{
+            System.out.println(res);
+            return "Task Completed";
         });
-//                .thenApply(res ->{
-//            System.out.println(res);
-//            return "Task Completed";
-//        });
 
         String ans = cf1.get();
         System.out.println(ans);
